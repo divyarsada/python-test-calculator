@@ -6,6 +6,6 @@ install:
 		pip install -r requirements.txt
 
 test:
-	python -m pytest ~ /home/ec2-user/environment/python-test-calculator/tests/*.py
+	python -m pytest ~/tests/*.py
 
 all: setup install test
