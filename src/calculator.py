@@ -9,13 +9,13 @@ def subtract(a, b):
 
 
 def multiply(a, b):
-    checkInputs(a,b)
+    checkInputs(a, b)
     return a * b
 
 
 def divide(a, b):
-    checkInputs(a,b)
-    return a / b
+    checkInputs(a, b)
+    return a/b
 
 
 def checkInputs(a, b):
