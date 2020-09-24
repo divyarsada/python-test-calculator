@@ -6,6 +6,6 @@ install:
 		pip install -r requirements.txt
 
 test:
-	python -m pytest ~/tests/*.py
+	python -m pytest ~/$WORKSPACE/tests/*.py
 
 all: setup install test
