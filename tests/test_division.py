@@ -3,7 +3,7 @@ import pytest
 
 
 def test_divide():
-    result = divide(3, 2)
+    result = divide(3.0, 2.0)
     assert result == 1.5
 
 
