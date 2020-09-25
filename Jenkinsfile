@@ -17,6 +17,10 @@ pipeline {
                always{
                 junit 'reports/result.xml'
                }
+            
+               failure{
+                mail to: team@example.com, subject: 'The Pipeline failed :('
+               }
             }
         }
        
