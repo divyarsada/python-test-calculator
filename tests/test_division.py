@@ -9,7 +9,7 @@ def test_divide():
 
 def test_divide_by_zero():
     with pytest.raises(ZeroDivisionError) as e:
-        divide(3, 0)
+        divide(7, 0)
 
 
 def test_divide_string():
