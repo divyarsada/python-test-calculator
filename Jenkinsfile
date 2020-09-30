@@ -1,6 +1,8 @@
-properties([pipelineTriggers([githubPush()])])
 pipeline {
     agent any
+    triggers {
+        gitlab(triggerOnPush: true, triggerOnMergeRequest: true, branchFilterType: 'All')
+    }
     stages {
         stage('Build') {
             steps {
