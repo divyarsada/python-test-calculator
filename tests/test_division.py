@@ -3,8 +3,8 @@ import pytest
 
 
 def test_divide():
-    result = divide(3.0, 2.0)
-    assert result == 1.5
+    result = divide(5.0, 2.0)
+    assert result == 2.5
 
 
 def test_divide_by_zero():
