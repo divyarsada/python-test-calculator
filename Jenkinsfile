@@ -19,7 +19,7 @@ pipeline {
                }
             
                failure{
-                mail to: team@example.com, subject: 'The Pipeline failed :('
+                mail to: divyars2492@gmail.com, subject: 'The Pipeline failed :('
                }
             }
         }
