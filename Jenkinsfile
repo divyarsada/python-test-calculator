@@ -1,7 +1,7 @@
 pipeline {
     agent any
     triggers {
-        gitlab(triggerOnPush: true, triggerOnMergeRequest: true, branchFilterType: 'All')
+        githubPush()
     }
     stages {
         stage('Build') {
@@ -23,7 +23,7 @@ pipeline {
             
                failure{
                 mail to: 'divyars2492@gmail.com', 
-                subject: 'The Pipeline failed'
+                    subject: 'The Pipeline failed'
                }
             }
         }
