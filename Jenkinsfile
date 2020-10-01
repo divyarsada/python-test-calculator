@@ -22,8 +22,9 @@ pipeline {
                }
             
                failure{
-                mail to: 'divyars2492@gmail.com', 
-                    subject: 'The Pipeline failed'
+                mail to: "divyars2492@gmail.com",
+                    subject: "[FAILURE]  💩  😵  [JENKINS] ${env.JOB_NAME} - Build # ${env.BUILD_NUMBER} - [FAILURE]!  👻  😭  ",
+                    body: "${env.JOB_NAME} - Build # ${env.BUILD_NUMBER} - FAILURE!"
                }
             }
         }
